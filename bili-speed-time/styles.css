@@ -1,0 +1,38 @@
+.bili-real-time-display {
+
+    margin-left: 20px;          
+ 
+    display: inline-flex;
+    flex-direction: column;     
+    justify-content: center;    
+    vertical-align: middle;     
+    
+    position: relative;
+    top: 0;                   
+    
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-variant-numeric: tabular-nums; 
+    white-space: nowrap;        
+    cursor: default;
+    z-index: 10;                
+    line-height: 1.2;          
+    text-align: left;          
+}
+
+.bili-rt-row-main {
+    font-size: 13px;
+    color: #eee;
+    font-weight: 400;
+}
+
+.bili-rt-row-sub {
+    font-size: 12px;            
+    color: rgba(255, 255, 255, 0.6); 
+    margin-top: 1px;            
+}
+
+.bili-real-time-display:hover .bili-rt-row-main,
+.bili-real-time-display:hover .bili-rt-row-sub {
+    color: #fff;
+    opacity: 1;
+}

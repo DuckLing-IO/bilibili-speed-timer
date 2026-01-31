@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Bilibili 倍速真实时长显示",
+  "version": "1.0",
+  "description": "在B站播放器进度条旁显示基于当前倍速计算的实际观看时长和实际总时长。",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.bilibili.com/video/*",
+        "*://www.bilibili.com/bangumi/play/*",
+        "*://www.bilibili.com/list/*"
+      ],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
